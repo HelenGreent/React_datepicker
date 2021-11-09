@@ -1,0 +1,82 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #344126;
+  }
+  
+  table {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  button,select {
+    width: 90px;
+    height: 40px;
+    background-color: antiquewhite;
+    border: 1px solid #362922;
+    border-radius: 30px;
+    text-align: center;
+    cursor: pointer;
+    padding-left: 5px;
+    margin: 10px;
+  }
+  
+  button:focus, select:focus {
+    outline: none;
+  }
+  
+  button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  
+  table thead tr th,
+  .calendar .day {
+    width: 40px;
+    height: 30px;
+    text-align: center;
+  }
+  
+  .calendar .day:hover {
+    background-color: antiquewhite;
+    border-radius: 40px;
+    cursor: pointer;
+  }
+  
+  .calendar .day.today {
+    background-color: #48612cfb;
+    color: antiquewhite;
+    border-radius: 40px;
+  }
+  
+  .calendar .day.today:hover {
+    background-color: #c2681efb;
+  }
+  
+  .calendar .day.selected {
+    border: 2px solid #48612cfb; 
+    border-radius: 40px;
+  }
+  
+  .calendar .day.today.selected {
+    border: 1px solid antiquewhite;
+  }
